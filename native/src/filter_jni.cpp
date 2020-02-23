@@ -22,6 +22,8 @@ JNIEXPORT jlong JNICALL Java_jni_1demo_Filter_create_1jni_1filter
     }
 }
 
+
+
 /*
  * Class:     jni_demo_Filter
  * Method:    init

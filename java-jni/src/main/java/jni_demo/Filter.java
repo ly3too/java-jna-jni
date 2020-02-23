@@ -4,6 +4,8 @@ import java.lang.*;
 class Filter{
     private long ref = 0;
 
+    private Filter() {}
+
     private static native long create_jni_filter(String name) throws Exception;
 
     private static native void init(long ref, String conf) throws Exception;
