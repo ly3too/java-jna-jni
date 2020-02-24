@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 project(jni-demo)
+set(CMAKE_CXX_STANDARD 14)
 
 find_package(JNI REQUIRED)
 include_directories(${JNI_INCLUDE_DIRS})
