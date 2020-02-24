@@ -41,8 +41,14 @@ test {
 
     dependsOn ":native:assemble"
     systemProperty 'java.library.path', project(":native").buildDir
+    systemProperty 'jna.library.path', project(":native").buildDir
 }
 
+run {
+    dependsOn ":native:assemble"
+    systemProperty 'java.library.path', project(":native").buildDir
+    systemProperty 'jna.library.path', project(":native").buildDir
+}
 
 jar {
     manifest {
