@@ -49,7 +49,7 @@ class Filter{
         Filter filter = new Filter();
         filter.ref = CLibrary.INSTANCE.create_jna_filter(name);
         if (filter.ref == null) {
-            throw new RuntimeException("not fuond filer");
+            return null;
         }
         return filter;
     }

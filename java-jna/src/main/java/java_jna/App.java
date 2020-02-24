@@ -25,6 +25,6 @@ public class App {
         run(filter, rounds);
         long endTime = System.currentTimeMillis();
 
-        System.out.println("execution_time(ms): " + (endTime - startTime));
+        System.out.println("jna iterations: " + rounds + " execution_time(ms): " + (endTime - startTime));
     }
 }

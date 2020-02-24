@@ -5,7 +5,7 @@ package jni_demo;
 import java.lang.*;
 
 public class App {
-    static int rounds = (int)1e7; // run 1e4 times
+    static int rounds = (int)1e7; // run 1e7 times
 
     public static void run(Filter filter, int rounds) throws Exception {
         for (int i = 0; i < rounds; ++i) {
@@ -26,6 +26,6 @@ public class App {
         run(filter, rounds);
         long endTime = System.currentTimeMillis();
 
-        System.out.println("execution_time(ms): " + (endTime - startTime));
+        System.out.println("jni iterations: " + rounds + " execution_time(ms): " + (endTime - startTime));
     }
 }
