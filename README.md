@@ -8,7 +8,8 @@ java-jna, java-jni and native are sub-projects of this demo.
 A simple speed comparison between JNA and JNI in this project shows that JNA is 
 about 10 times slower than the JNI counterpart.
 
-Native sub-project is built using cmake. And dependencies added accordingly.
+Native sub-project is built using cmake. And dependencies added accordingly. Cmake is
+still the most convenient way to build native C/C++ project.
 
 ## build and run
 
