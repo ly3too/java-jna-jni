@@ -47,6 +47,10 @@ run {
     systemProperty 'java.library.path', project(":native").buildDir
 }
 
+compileJava {
+    options.compilerArgs += ["-h", "${rootProject.projectDir}/native/src/include"]
+}
+
 jar {
     manifest {
         attributes(
